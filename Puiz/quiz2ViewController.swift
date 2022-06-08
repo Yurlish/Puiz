@@ -8,7 +8,7 @@
 import UIKit
 
 class quiz2ViewController: UIViewController {
-
+    
     var quizArray = [Any]()
     
     var correctAnser: Int = 0
@@ -20,28 +20,28 @@ class quiz2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        quizArray.append(["猿も木","を斬る","から落ちる","ウキッウキキッウッキー！",2])
-        quizArray.append(["WARNINGの意味は？","ワニャー","危険","ワニって美味しいよ",1])
-        quizArray.append(["眠くなると","手足が動かなくなる","ヴォぉぉぉ","目が開かなくなる",3])
-        quizArray.append(["環境破壊は","ダメゾイ","楽しいゾイ","気持ちいゾイ",3])
-        quizArray.append(["明日の次は","あさって","しあさって","らいねん",1])
-        quizArray.append(["まっくろくろすけ","出てくんなー","出ておいで〜","タピオカパン",2])
-        quizArray.append(["眠くなると","体が重くなる","動きが鈍くなる","眠くなる",2])
-        quizArray.append(["寿司は","アメリカの文化","インドの文化","日本の文化",3])
-        quizArray.append(["ニンジンは英語で","ninjin","carrot","rabbit's foods",2])
-        quizArray.append(["ぶたに","肉まん","小判","真珠",3])
-        quizArray.append(["猫に","こたつ","小判","毛糸",2])
-        quizArray.append(["馬の耳に","ニンジン","きゅうり","念仏",2])
-        quizArray.append(["作成者の今日のお昼ご飯は","ステーキ","パスタ","冷やし中華",4])
-        quizArray.append(["作成者が好きな歌手グループは？","X-japan","一世風靡セピア","SOPHIA",3])
-        quizArray.append(["GW前に起きた最悪の出来事は？","新たなアレルギー発覚","家族にコロナが出た","財布なくす",2])
-        quizArray.append(["せんせー、おやつはバナナに入りますかぁ？","入ります","あなたはまず日本語を学びなさい","入りません",2])
-        quizArray.append(["ゴリラの学名は？","ウホッウホホウホッウホッ","ゴリラゴリラゴリラ","GODRILLA",2])
-        quizArray.append(["作成者が今bookoffで注文した物と個数は？","本20冊","本5冊＋CD5タイトル＋DVD2タイトル","CD10タイトル＋本１冊",3])
-        quizArray.append(["作成者が英語の授業で有名人のプロフィールを書けと言われて書いた人物とは？","ふなっしー","ロムスカ・パロ・ウル・ラピュタ","ルンパッパ",2])
-        quizArray.append(["believeの意味は？","希望","信じる","寿司食べたい",2])
-        quizArray.append(["今日の気分は？","眠い","元気","オネェチャァァァァン!!!",1])
+        
+        quizArray.append(["apple","猿","バナナ","りんご",3])
+        quizArray.append(["bom","ボンド","爆弾","ボタン",2])
+        quizArray.append(["cat","切る","猫","葛藤",2])
+        quizArray.append(["die","台","台紙","死",3])
+        quizArray.append(["easy","簡単","いい字","インド人",1])
+        quizArray.append(["fang","ハンガー","牙","ファンサービス",2])
+        quizArray.append(["gost","ゴキブリ","お化け","犯罪者",2])
+        quizArray.append(["hunter","とっとこ〜走るよハム太郎〜","ひ〜まわりのたね〜","密猟者",3])
+        quizArray.append(["ice","スマホに代わる新型携帯電話","氷","池",2])
+        quizArray.append(["jump","はねる","ｺｯｺｯｺｯｺｯｺｯ","週刊誌",1])
+        quizArray.append(["kid","近所の城戸さん","子ども","ガキ",2])
+        quizArray.append(["lock","ロックバンド","監禁","施錠",3])
+        quizArray.append(["must","しなければならない","ムスカ","ムシューダ",1])
+        quizArray.append(["note","海苔","ノート","のってる？",2])
+        quizArray.append(["octopus","置くとパス","イカ","タコ",3])
+        quizArray.append(["piano","ピノ","パイナップル","ピアノ",3])
+        quizArray.append(["quiz","こいつ....!","クイズ","恋する",2])
+        quizArray.append(["restaurant","レストラン","連想ゲーム","ダンスする",1])
+        quizArray.append(["solt","塩","反る","白",1])
+        quizArray.append(["table","亀","テーブル","タブレット",2])
+        quizArray.append(["utopia","絶望的な世界","失恋☆世界","理想的な世界",3])
         quizArray.shuffle()
         choiceQuiz()
         // Do any additional setup after loading the view.
@@ -53,17 +53,19 @@ class quiz2ViewController: UIViewController {
         choiceButton2.setTitle(tmpArray[2] as? String, for: .normal)
         choiceButton3.setTitle(tmpArray[3] as? String, for: .normal)
     }
- func performSegueToResult() {
-       performSegue (withIdentifier: "toResultView", sender: nil)
+    func performSegueToResult() {
+        performSegue (withIdentifier: "toResult2View", sender: nil)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toResultView"{
-            let resultViewController = segue.destination as! ResultViewController
-            resultViewController.correctAnswer = self.correctAnser
+        if segue.identifier == "toResult2View"{
+            let result2ViewController = segue.destination as! Result2ViewController
+            result2ViewController.correctAnswer = self.correctAnser
         }
     }
+    
     @IBAction func choiceAnswer(sender:UIButton){
-            let tmpArray = quizArray[0] as! [Any]
+        let tmpArray = quizArray[0] as! [Any]
         if tmpArray[4] as! Int == sender.tag{
             correctAnser = correctAnser + 1
         }
@@ -73,17 +75,17 @@ class quiz2ViewController: UIViewController {
         }else{
             choiceQuiz()
         }
-      
-
-        }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        
     }
-    */
-
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
