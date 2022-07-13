@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B42749C2859A4C700A78CF9 /* zukan1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42749B2859A4C700A78CF9 /* zukan1.swift */; };
+		4B478351286C265600935047 /* quiz3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B478350286C265600935047 /* quiz3ViewController.swift */; };
+		4B478353286C267000935047 /* result3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B478352286C267000935047 /* result3ViewController.swift */; };
 		4B914E9328472DD500E7C794 /* quizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B914E9228472DD500E7C794 /* quizuViewController.swift */; };
 		4B914E9528472F1E00E7C794 /* quiz2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B914E9428472F1E00E7C794 /* quiz2ViewController.swift */; };
 		4B914E9728472F7A00E7C794 /* Result2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B914E9628472F7A00E7C794 /* Result2ViewController.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B42749B2859A4C700A78CF9 /* zukan1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zukan1.swift; sourceTree = "<group>"; };
+		4B478350286C265600935047 /* quiz3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz3ViewController.swift; sourceTree = "<group>"; };
+		4B478352286C267000935047 /* result3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = result3ViewController.swift; sourceTree = "<group>"; };
 		4B914E9228472DD500E7C794 /* quizuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizuViewController.swift; sourceTree = "<group>"; };
 		4B914E9428472F1E00E7C794 /* quiz2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz2ViewController.swift; sourceTree = "<group>"; };
 		4B914E9628472F7A00E7C794 /* Result2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result2ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				4BBF3FA72833660A0007DA89 /* AppDelegate.swift */,
+				4B42749B2859A4C700A78CF9 /* zukan1.swift */,
 				4BBF3FA92833660A0007DA89 /* SceneDelegate.swift */,
 				4BBF3FAB2833660A0007DA89 /* ViewController.swift */,
 				4BBF3FAD2833660A0007DA89 /* Main.storyboard */,
@@ -129,8 +136,10 @@
 				4BBF3FB52833660C0007DA89 /* Info.plist */,
 				4BBF3FD72833669E0007DA89 /* QuizViewController.swift */,
 				4BBF3FD9283366C10007DA89 /* ResultViewController.swift */,
+				4B478350286C265600935047 /* quiz3ViewController.swift */,
 				4B914E9428472F1E00E7C794 /* quiz2ViewController.swift */,
 				4B914E9628472F7A00E7C794 /* Result2ViewController.swift */,
+				4B478352286C267000935047 /* result3ViewController.swift */,
 				4B914E982847303800E7C794 /* zukanViewController.swift */,
 				4B914E9A2847323000E7C794 /* zukan1ViewController.swift */,
 				4B914E9C2847325400E7C794 /* zukan2ViewController.swift */,
@@ -290,11 +299,14 @@
 			files = (
 				4BBF3FDA283366C10007DA89 /* ResultViewController.swift in Sources */,
 				4B914E9328472DD500E7C794 /* quizuViewController.swift in Sources */,
+				4B478351286C265600935047 /* quiz3ViewController.swift in Sources */,
 				4B914EA12847328F00E7C794 /* zukan4ViewController.swift in Sources */,
 				4B914E9528472F1E00E7C794 /* quiz2ViewController.swift in Sources */,
 				4BBF3FAC2833660A0007DA89 /* ViewController.swift in Sources */,
 				4BBF3FA82833660A0007DA89 /* AppDelegate.swift in Sources */,
+				4B478353286C267000935047 /* result3ViewController.swift in Sources */,
 				4BBF3FAA2833660A0007DA89 /* SceneDelegate.swift in Sources */,
+				4B42749C2859A4C700A78CF9 /* zukan1.swift in Sources */,
 				4B914E9B2847323000E7C794 /* zukan1ViewController.swift in Sources */,
 				4B914E9D2847325400E7C794 /* zukan2ViewController.swift in Sources */,
 				4B914E9F2847327400E7C794 /* zukan3ViewController.swift in Sources */,
